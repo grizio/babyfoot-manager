@@ -1,0 +1,48 @@
+#games {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.game {
+  display: flex;
+  margin: 0;
+  padding: 12px 4px;
+  transition: all ease-in-out 250ms;
+}
+
+.game:nth-of-type(2n) {
+  background-color: #eee;
+}
+
+.game:hover {
+  background-color: #ddd;
+}
+
+.game .terminate {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0;
+}
+
+.game .name {
+  flex-grow: 1;
+  margin: auto 5px;
+}
+
+.game .delete {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.game.terminated {
+  color: green;
+  font-style: italic;
+}
+
+.game.terminated .terminate {
+  visibility: hidden;
+}

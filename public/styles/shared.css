@@ -1,0 +1,54 @@
+h2 > small {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.full-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-column .scrollable {
+  flex-grow: 1;
+}
+
+.full-column .actions {
+  padding: 20px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.scrollable {
+  overflow-y: auto;
+}
+
+.actions form:not(.hidden) {
+  display: flex;
+  align-items: center;
+}
+
+.actions form:not(.hidden) > *:first-child {
+  margin-right: 4px;
+}
+
+.actions form input {
+  border: 1px solid #aaa;
+  padding: 8px;
+  flex-grow: 1;
+  border-radius: 2px;
+}
+
+.actions form button[type=submit] {
+  border: 1px solid #aaa;
+  border-left: none;
+  background-color: #fff;
+  align-self: stretch;
+  cursor: pointer;
+  transition: all ease-in-out 250ms;
+}
+
+.actions form button[type=submit]:hover {
+  background-color: #eee;
+}

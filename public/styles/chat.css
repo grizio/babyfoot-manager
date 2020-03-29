@@ -1,0 +1,19 @@
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#messages > li {
+  display: flex;
+}
+
+#messages > li > strong {
+  margin-right: 10px;
+  flex-basis: 100px;
+  text-align: right;
+}
+
+#messages > li > strong:after {
+  content: " : ";
+}

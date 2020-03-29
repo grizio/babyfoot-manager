@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="public/styles/shared.css">
+  <link rel="stylesheet" href="public/styles/template.css">
+  <link rel="stylesheet" href="public/styles/games.css">
+  <link rel="stylesheet" href="public/styles/chat.css">
+  <title>Babyfoot manager</title>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Babyfoot manager</h1>
+  </header>
+
+  <main class="row">
+    <section id="games-section" class="col full-column">
+      <h2>Liste des parties <small><span id="current-games-count"></span> en cours</small></h2>
+
+      <ul id="games" class="scrollable"></ul>
+
+      <div class="actions">
+        <form id="create-game">
+          <label for="create-game-name">Nouvelle partie :</label>
+          <input type="text" name="name" id="create-game-name" required/>
+
+          <button type="submit">
+            Ajouter
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section id="chat-section" class="col full-column">
+      <h2>Chat <small id="pseudo"></small></h2>
+
+      <ul id="messages" class="scrollable"></ul>
+
+      <div class="actions">
+        <form id="define-pseudo">
+          <label for="define-pseudo-pseudo">Nom d'utilisateur :</label>
+          <input type="text" name="name" id="define-pseudo-pseudo" required/>
+
+          <button type="submit">Commencer à converser</button>
+        </form>
+
+        <form id="create-message" class="hidden">
+          <label for="create-message-message">Message :</label>
+          <input type="text" name="name" id="create-message-message" required/>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="public/scripts/index.js" type="module"></script>
+</body>
+</html>

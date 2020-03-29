@@ -1,0 +1,45 @@
+html, body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px #aaa;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  border-bottom: 1px solid #aaa;
+  flex-grow: 1;
+}
+
+
+main.row {
+  display: flex;
+  height: calc(100vh - 100px);
+}
+
+main.row .col {
+  flex: 1 1 590px;
+}
+
+main.row .col:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+main.row .col:last-of-type {
+  border-left: 1px solid #aaa;
+  padding-left: 10px;
+}

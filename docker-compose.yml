@@ -1,0 +1,13 @@
+version: '3'
+services:
+  postgresql:
+    image: postgres:12
+    container_name: babyfoot-pg
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "babyfoot"
+      POSTGRES_PASSWORD: "babyfoot"
+      POSTGRES_DB: "babyfoot"
+    volumes:
+      - ./dev/docker:/docker-entrypoint-initdb.d
